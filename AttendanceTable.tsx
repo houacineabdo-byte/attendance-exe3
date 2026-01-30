@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Person } from '@/types/attendance';
+import { Person } from '@/attendance';
 import { QRCodeSVG } from 'qrcode.react';
 import { UserCheck, UserX, QrCode, Printer, Search, Trash2 } from 'lucide-react';
 import {
@@ -7,7 +7,7 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog';
+} from '@/dialog';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -18,7 +18,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from '@/components/ui/alert-dialog';
+} from '@/alert-dialog';
 import {
   Table,
   TableBody,
@@ -26,8 +26,8 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/ui/table';
-import { Badge } from '@/components/ui/badge';
+} from '@/table';
+import { Badge } from '@/badge';
 import { toast } from 'sonner';
 
 interface AttendanceTableProps {
